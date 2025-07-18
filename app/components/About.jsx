@@ -54,13 +54,14 @@ const About = () => {
 					className="flex-1"
 				>
 					<p className="mb-10 max-w-2xl font-Ovo">
-						Proactive and detail-oriented Virtual Assistant with strong
-						technical expertise, combining over 2 years of experience in IT
-						support, front-end development, and customer onboarding. Adept at
-						managing SaaS platforms, solving technical issues, and providing
-						client-focused digital support. Proven ability to bridge the gap
-						between users and technical teams with excellent communication and
-						problem-solving skills.
+						Dynamic professional with a robust skill set in leadership,
+						Microsoft Office Suite, and effective communication. Proficient in
+						HTML, CSS, JavaScript, and React, demonstrating adaptability to new
+						technologies and strong problem-solving abilities. Experienced in
+						compliance management and time management, excelling under pressure
+						while fostering teamwork. Career goal includes leveraging technical
+						expertise and leadership skills to drive innovative solutions in a
+						forward-thinking organization
 					</p>
 
 					<motion.ul
