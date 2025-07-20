@@ -45,7 +45,7 @@ const Work = () => {
 				transition={{ delay: 0.9, duration: 0.6 }}
 				className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5"
 			>
-				{workData.map((project, index) => (
+				{/* {workData.map((project, index) => (
 					<motion.div
 						whileHover={{ scale: 1.05 }}
 						transition={{ duration: 0.3 }}
@@ -67,7 +67,49 @@ const Work = () => {
 							</div>
 						</div>
 					</motion.div>
-				))}
+				))} */}
+				{workData.map(({ title, description, bgImage, link }, index) => {
+					return (
+						<motion.div
+							key={index}
+							whileHover={{ scale: 1.05 }}
+							transition={{ duration: 0.3 }}
+							style={{ backgroundImage: `url(${bgImage})` }}
+							className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+						>
+							<div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between group-hover:bottom-7 duration-500">
+								<div>
+									<h2 className="font-semibold">{title}</h2>
+									<p className="text-sm text-gray-700">{description}</p>
+								</div>
+
+								{/* Only render the clickable icon if the link exists */}
+								{link ? (
+									<a
+										href={link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+									>
+										<Image
+											src={assets.send_icon}
+											alt="send icon"
+											className="w-5"
+										/>
+									</a>
+								) : (
+									<div className="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] opacity-50 cursor-not-allowed">
+										<Image
+											src={assets.send_icon}
+											alt="send icon"
+											className="w-5"
+										/>
+									</div>
+								)}
+							</div>
+						</motion.div>
+					);
+				})}
 			</motion.div>
 
 			<motion.a

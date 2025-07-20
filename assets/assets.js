@@ -35,6 +35,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import postman from './postman.png';
+import github from './github.png';
 
 export const assets = {
     user_image,
@@ -47,7 +49,9 @@ export const assets = {
     vscode,
     firebase,
     figma,
+    postman,
     git,
+    github,
     mongodb,
     right_arrow_white,
     logo,
@@ -78,19 +82,23 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'My Portfolio',
+        description: 'Personal portfolio showcasing skills and projects using Next.js',
         bgImage: '/work-1.png',
+        link: 'https://portfolio-eight-blush-23.vercel.app/',
+        
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'O2tvseries Clone',
+        description: 'O2tvseries landing page clone using HTML, CSS, JavaScript',
         bgImage: '/work-2.png',
+        link: 'https://lexzyart.github.io/o2tvseries-landingpage-clone/',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Tindog app',
+        description: 'Responsive landing page built with bootstrap, to master bootstrap',
         bgImage: '/work-3.png',
+        link: 'https://lexzyart.github.io/Tindog/',
     },
     {
         title: 'UI/UX designing',
@@ -101,17 +109,17 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
+    { icon: assets.mobile_icon, title: 'IT Support', description: 'Helping you stay connected and productive...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Sc in Computer Science' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built over 3 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.postman, assets.github, assets.figma, assets.git
 ];

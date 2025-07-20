@@ -65,14 +65,14 @@ const Navbar = () => {
 							About me
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							className="font-Ovo"
 							href="#services"
 						>
 							Services
 						</a>
-					</li>
+					</li> */}
 					<li>
 						<a
 							className="font-Ovo"
