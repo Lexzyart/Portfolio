@@ -100,11 +100,11 @@ export const workData = [
         bgImage: '/work-3.png',
         link: 'https://lexzyart.github.io/Tindog/',
     },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+    // {
+    //     title: 'UI/UX designing',
+    //     description: 'UI/UX Design',
+    //     bgImage: '/work-4.png',
+    // },
 ]
 
 export const serviceData = [
